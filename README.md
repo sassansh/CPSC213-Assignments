@@ -25,11 +25,9 @@
 [![GitHub license](https://img.shields.io/github/license/sassansh/CPSC213-Assignments?style=for-the-badge)](https://github.com/sassansh/CPSC213-Assignments/blob/master/LICENSE)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-Course Description: Software architecture, operating systems, and I/O architectures. Relationships between application software, operating systems, and computing hardware; critical sections, deadlock avoidance, and performance; principles and operation of disks and networks.
-
 ![Code preview](/images/screenshot.png)
 
+Course Description: Software architecture, operating systems, and I/O architectures. Relationships between application software, operating systems, and computing hardware; critical sections, deadlock avoidance, and performance; principles and operation of disks and networks.
 ## Table of Contents
 
 - [Technology Stack 🛠️](#technology-stack-)
