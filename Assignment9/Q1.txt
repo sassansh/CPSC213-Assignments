@@ -1,0 +1,6 @@
+sRead 10  finsihed in 0.115s
+sRead 100 finsihed in 1.104s
+sRead 100 finsihed in 11.001s
+
+sRead is very slow because it runs without parralelism, reading each block one at a time. Main sets the "is_read_pending" flag
+to 1, then it is monitored in the loop (using CPU time) until it is set back to 0 again. 

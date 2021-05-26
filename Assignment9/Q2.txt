@@ -1,0 +1,18 @@
+10 reads:
+aRead: 0.014s
+sRead: 0.113s
+
+100 reads:
+aRead: 0.015s
+sRead: 1.102s
+
+1000 reads:
+aRead: 0.018s
+sRead: 10.997s
+
+aRead is able to perform multiple reads in parallel, therefore its performance is significantly
+improved compared to sRead. Because of this, increasing the number of reads doesnt affect the 
+amount of time it takes aRead to run as they all happen at the same time. 
+
+On the other hand, sRead's speed is proportional to the number of reads it is doing as each read 
+has its own delay.

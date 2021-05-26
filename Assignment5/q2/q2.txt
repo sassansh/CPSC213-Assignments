@@ -1,0 +1,9 @@
+There was a dangling poitner in the pop function. After calling 'free(e)', 
+you have emptied out the memory that was allocated to storing e->name,
+however, 'e' on the stack still points to that location. But because
+we had free'd it, we are not guaranteed to still have e's name in that location,
+as the system could have used it for other purposes.
+
+To fix this bug, I temporarily create a new pointer variable called copy,
+and copy the contents of e->name into it before freeing e. Then later free
+copy's memory to avoid a memory leak.

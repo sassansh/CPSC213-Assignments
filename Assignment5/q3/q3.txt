@@ -1,0 +1,8 @@
+Bug:
+The memory leak was caused by not freeing the memory that was allocated to the integers.
+
+Fix:
+By implementing the reference counting, we are keeping a count of how many times we are
+creating references to each integer using rc_keep_ref. Then, every time we delete a 
+reference to it, we decrease the count by 1 so that once we have 0 references to that integer,
+we can free the memory and avoid the memory leak.

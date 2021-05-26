@@ -1,0 +1,5 @@
+Since DF-224 is an old computer and before the Intel era, it runs on Big Endian. We need to flip the bytes when
+communicating from our Intel machine which runs on Little Endian, therefore:
+
+RA = 0x65F60700
+D  = 0xB391DDFF

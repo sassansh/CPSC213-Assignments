@@ -1,0 +1,19 @@
+10 reads:
+tRead: 0.025s
+aRead: 0.014s
+sRead: 0.113s
+
+
+100 reads:
+tRead: 0.114s
+aRead: 0.015s
+sRead: 1.102s
+
+1000 reads:
+tRead: 0.970s
+aRead: 0.018s
+sRead: 10.997s
+
+tRead is clearly much faster than sRead. However, it is slightly slower than aRead. 
+This is most likely due to initial work to create the threads, then block and unblocking them.
+Otherwise, it's still much faster than sRead because it doesn't utilize any costly loops.

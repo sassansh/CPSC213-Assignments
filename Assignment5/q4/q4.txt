@@ -1,0 +1,8 @@
+The issue arises in the list.c file on lines 62 and 63 where:
+
+  free (element_get_value (e));
+  free (e);
+
+  are called. These lines of code are not aware of the refrences to those elements by the tree. 
+  So once we free those elements, they are no longer in memory. So when we ask the tree to print its
+  values, it does cannot access it anymore.

@@ -1,0 +1,4 @@
+0x5D3A3A5D
+
+For the example above, the big- and little-endian representations are identical.
+Yes, we can generalize this pattern. When read in 2s, the bytes should be mirrored from the middle.

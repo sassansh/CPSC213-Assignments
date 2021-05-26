@@ -1,0 +1,7 @@
+12345688
+01020304
+FFFFFFFF
+AABBBBAA
+
+The results given by my written program were checked with an online hex to decimal converter to make sure its
+working properly.

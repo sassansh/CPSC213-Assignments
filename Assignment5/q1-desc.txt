@@ -1,0 +1,18 @@
+  v0 = a->x[i];
+  v1 = a->b.y[i];
+  v2 = a->b.a->x[i];
+  a->b.a = a;
+  v3 = a->b.a->b.y[i];
+
+  Reads:
+    4 reads on line #1: i, a, a->x, a->x[0]
+    1 read  on line #2: a->b.y[i]
+    3 reads on line #3: a->b.a, a->b.a->x, a->b.a->x[i]
+
+  Writes:
+    1 write on line #1: v0
+    1 write on line #2: v1
+    1 write on line #3: v2
+    1 write on line #4: a->b.a
+    1 write on line #5: v3
+
